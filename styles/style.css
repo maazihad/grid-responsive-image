@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+}
+.header {
+  text-align: center;
+  font-size: 1.5rem;
+  border: 2px solid teal;
+  margin-bottom: 5px;
+}
+.header:hover {
+  border: 2px solid salmon;
+  background-color: blanchedalmond;
+}
+.container {
+  transition: 1s;
+}
+.container div {
+  overflow: hidden;
+}
+.container div {
+  background-color: yellow;
+}
+.container div:hover img {
+  transform: scale(1.1);
+  opacity: 0.5;
+  transition: 1s;
+  animation-timing-function: ease;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  display: block;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 5px;
+  grid-auto-flow: dense;
+}
+.horizontal {
+  grid-column: span 2;
+}
+.vertical {
+  grid-row: span 2;
+}
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
